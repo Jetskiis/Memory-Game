@@ -1,10 +1,11 @@
-import React from 'react'
+import "../styles/Footer.css"
 
-export const Footer = () => {
+const Footer = () => {
   return (
-    <Footer>
-        <p>Copyright &Copyright 2022 Jetskiis</p>
-        <link href="" target="_blank"></link>
-    </Footer>
+    <footer className="footer">
+        <p>Copyright &copy; 2022 Jetskiis</p>
+        <link href="https://github.com/Jetskiis/Memory-Game"  rel="noopener noreferrer"></link>
+    </footer>
   )
 }
+export default Footer;
