@@ -1,0 +1,29 @@
+.scoreboard{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0.5rem;
+    margin: 1rem;
+
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
+
+}
+
+.scoreboard #current-score{
+    margin: 0 1em;
+    padding: 0.75rem 2.5rem;
+    background: rgb(116, 218, 133);
+    border-radius: 1rem;
+}
+
+.scoreboard #best-score{
+    margin: 0 1em;
+    padding: 0.75rem 2.5rem;
+    background-color: rgb(247, 135, 38);
+    border-radius: 1rem;
+} 

@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'react';
-
+import "../styles/Scoreboard.css"; 
 interface ScoreboardProps {
   score: number;
 }
@@ -15,8 +15,8 @@ const Scoreboard = (props: ScoreboardProps) => {
 
   return (
     <div className="scoreboard">
-      <div id="current-score">Score: {props.score}</div>
-      <div id="best-score">Best: {maxScore}</div>
+      <div id="current-score">Current Score: {props.score}</div>
+      <div id="best-score">Best Score: {maxScore}</div>
     </div>
   )
 }

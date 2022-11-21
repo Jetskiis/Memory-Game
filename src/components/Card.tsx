@@ -1,5 +1,6 @@
+import "../styles/Card.css"
+
 interface CardProps{
-    key: number
     img: string;
     name: string;
     onClick: () => void;
@@ -7,7 +8,7 @@ interface CardProps{
 
 const Card = (props: CardProps) => {
     return(
-    <div className="card" key={props.key} onClick={props.onClick}>
+    <div className="card" onClick={props.onClick}>
         <img src={props.img} alt=""/>
         <span>{props.name}</span>
     </div>
