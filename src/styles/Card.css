@@ -7,7 +7,9 @@
     border-radius: 1.5rem;
     box-shadow: 0 0 0.5rem 0.25rem rgb(192, 192, 192);
 
-    padding: 0.5rem;
+    padding: 0.9rem;
+    width: 7.5rem;
+    z-index: 2;
     
 }
 
@@ -16,7 +18,7 @@
 }
 
 .card img{
-    height: 6rem;
+    height: 4rem;
     width: auto;
 }
 

@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import Card from "./Card";
+import "../styles/CardContainer.css";
 
 interface CardContainerProps {
   cards: {};
@@ -21,7 +22,7 @@ const cardDict: any = {
   pikachu: "img/pokemon_img/pikachu.png",
   rattata: "img/pokemon_img/rattata.png",
   sandshrew: "img/pokemon_img/sandshrew.png",
-  squirtle: "img/pokemon_img/squritle.png",
+  squirtle: "img/pokemon_img/squirtle.png",
   vulpix: "img/pokemon_img/vulpix.png",
   weedle: "img/pokemon_img/weedle.png",
 };
@@ -30,13 +31,13 @@ const cardDict: any = {
 const CardContainer = (props: CardContainerProps) => {
   useEffect(() => {
     if(Object.keys(props.cards).length === numCards) {
-      alert("You win!");
+      alert("You've reached the max score!");
       props.setCards({});
     }
   },[props]);  
 
   function handleClick(e: React.MouseEvent) {
-    const cardName: string | null = (e.target as HTMLElement).id;  
+    const cardName: string | null = (e.currentTarget as HTMLElement).id;  
     // console.log(cardName);
     if(cardName) {
     if((props.cards as any)[cardName]) {
@@ -63,8 +64,9 @@ const CardContainer = (props: CardContainerProps) => {
 
   return (
     <div className="card-container">
+      <div className="grid-container">
       {output}
-      {/* <Card key={1} img={"img/pokemon_img/1891631-016pidgey.png"} onClick={()=>{}} name={"Pidgey"}></Card> */}
+      </div>
     </div>
   )
 }
